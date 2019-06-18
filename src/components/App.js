@@ -8,6 +8,9 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from '../reducers/PeopleReducer';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -16,15 +19,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const store = createStore(reducers);
+
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
+      <Provider store={store}>
       <View style={styles.container}>
-        <Text style={styles.welcome}>AweSome App !</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.welcome}>Welcome to CRM!</Text>
       </View>
+    </Provider>
     );
   }
 }

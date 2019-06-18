@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "firstName": "Abrar",
+        "lastName": "Zahin",
+        "phone": "555-555-2342",
+        "company": "Linkedin",
+        "project": "CRM project",
+        "notes": "This is a note"
+    },
+    {
+        "id": 1,
+        "firstName": "Maxwel",
+        "lastName": "White",
+        "phone": "555-555-2342",
+        "company": "Linkedin",
+        "project": "CRM project",
+        "notes": "This is a note"
+    },
+    {
+        "id": 1,
+        "firstName": "Kim",
+        "lastName": "Chen",
+        "phone": "555-555-2342",
+        "company": "Linkedin",
+        "project": "CRM project",
+        "notes": "This is a note"
+    }
+]
