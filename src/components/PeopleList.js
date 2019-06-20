@@ -14,9 +14,14 @@ const styles = StyleSheet.create({
 });
 
 class PeopleList extends Component {
+    static navigationOptions = {
+        tabBarIcon: ({tintColor}) => (
+            <Icon name={'user'} size={50} color={tintColor} />
+        )
+    }
     render() {
         return (
-            <View styles = {styles.container}>
+            <View style={styles.container}>
             <FlatList
                 data={this.props.people}
                 renderItem={({item}) => <PeopleItem people={item} />}
