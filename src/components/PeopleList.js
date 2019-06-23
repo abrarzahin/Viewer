@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
+import Icon from 'react-native-vector-icons/EvilIcons';
 import { connect } from 'react-redux';
 import PeopleItem from './PeopleItem';
 
